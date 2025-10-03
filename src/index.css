@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes glow-correct {
+  0% { box-shadow: 0 0 5px #10b981; }
+  50% { box-shadow: 0 0 20px #10b981; }
+  100% { box-shadow: 0 0 5px #10b981; }
+}
+
+@keyframes glow-wrong {
+  0% { box-shadow: 0 0 5px #ef4444; }
+  50% { box-shadow: 0 0 20px #ef4444; }
+  100% { box-shadow: 0 0 5px #ef4444; }
+}
+
+.glow-correct {
+  animation: glow-correct 0.5s ease-in-out;
+}
+
+.glow-wrong {
+  animation: glow-wrong 0.5s ease-in-out;
+}
+
+.progress-bar {
+  transition: width 1s linear;
+}
